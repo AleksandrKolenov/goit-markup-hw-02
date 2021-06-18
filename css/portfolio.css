@@ -12,22 +12,39 @@ body {
   font-family: Roboto, sans-serif;
 }
 
+.list {
+  list-style: none;
+}
+
+/* link */
+
 .link {
   color: #212121;
 }
 
+/* nav */
+
 .link:hover,
 .link:focus {
   color: var(--accent-color);
-
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1, 14;
-  letter-spacing: 0.02em;
 }
 
 .link.current {
   color: var(--accent-color);
+}
+
+/* features */
+
+.text {
+  color: var(--secondary-text-color);
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1, 9;
+
+  letter-spacing: 0.03em;
 }
 
 .title {
@@ -39,8 +56,10 @@ body {
   letter-spacing: 0.06em;
 }
 
-.text {
-  color: #757575;
+/* e-mail */
+
+.adress {
+  color: var(--secondary-text-color);
 
   font-family: Roboto;
   font-size: 16px;
@@ -48,9 +67,16 @@ body {
   letter-spacing: 0.03em;
 }
 
-.pointer {
+.adress:hover,
+.adress:focus {
+  color: var(--accent-color);
+}
+
+/* button */
+
+.pointer-secondory {
   cursor: pointer;
-  color: #212121;
+  color: var(--primery-text-color);
 
   font-family: Roboto;
   font-style: normal;
@@ -63,6 +89,18 @@ body {
 
   letter-spacing: 0.03em;
 }
+
+.pointer-primery {
+  color: var(--primery-img-color);
+  background-color: var(--accent-color);
+}
+
+.pointer-secondory:hover,
+.pointer-secondory:focus {
+  color: #2196f3;
+}
+
+/* footer */
 
 .footer-niv {
   background: var(--primery-footer-color);
@@ -79,4 +117,26 @@ body {
 
 .pic {
   color: var(--secondary-img-color);
+}
+
+.logo-big {
+  color: var(--accent-color);
+
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1, 2;
+  letter-spacing: 0.03em;
+}
+
+.logo-large {
+  color: var(--primery-logo);
+
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1, 2;
+  letter-spacing: 0.03em;
 }
