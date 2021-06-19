@@ -5,6 +5,7 @@
   --secondary-text-color: #757575;
   --primery-footer-color: #2f303a;
   --accent-color: #2196f3;
+  --primery-logo: #000000;
 }
 
 body {
@@ -15,7 +16,13 @@ body {
 .list {
   list-style: none;
 }
+.logo {
+  text-decoration: none;
+}
 
+.list li a {
+  text-decoration: none;
+}
 /* link */
 
 .link {
@@ -119,9 +126,11 @@ body {
   color: var(--secondary-img-color);
 }
 
-.logo-big {
-  color: var(--accent-color);
+.logo-pic {
+  color: var(--primery-bg-color);
+}
 
+.logo {
   font-family: Raleway;
   font-style: normal;
   font-weight: bold;
@@ -132,11 +141,20 @@ body {
 
 .logo-large {
   color: var(--primery-logo);
+}
 
-  font-family: Raleway;
+.link-mail {
+  color: rgba(255, 255, 255, 0.6);
+
+  font-family: Roboto;
   font-style: normal;
-  font-weight: bold;
-  font-size: 26px;
-  line-height: 1.2;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.7;
   letter-spacing: 0.03em;
+}
+
+.link-mail:hover,
+.link-mail:focus {
+  color: var(--accent-color);
 }

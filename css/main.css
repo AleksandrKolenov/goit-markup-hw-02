@@ -9,21 +9,18 @@
   --primery-footer-color: #2F303A;
   --primery-main-color: #F5F4FA;
   --primery-logo: #000000;
+  
 }
 
-.body {
-  background: var(--primery-bg-color)
-
-  color: var(--primery-tex-color);
-
-font-family: Roboto, sans-serif;
-letter-spacing: 0.03em;
+body {
+  background: var(--primery-img-color);
+  font-family: Roboto, sans-serif;
 }
 
 /* Logo */
 
-.logo-big {
-  color: var(--accent-color);
+.logo {
+    color: var(--accent-color);
 
   font-family: Raleway;
 font-style: normal;
@@ -33,22 +30,27 @@ line-height: 1.2;
 letter-spacing: 0.03em;
 }
 
+
+
 .logo-large {
   color: var(--primery-logo);
+}
 
-    font-family: Raleway;
-font-style: normal;
-font-weight: bold;
-font-size: 26px;
-line-height: 1.2;
-letter-spacing: 0.03em;
+.logo-pic {
+  color: var(--primery-bg-color);
+}
 
+.logo {
+  text-decoration: none;
 }
 
 .list {
   list-style: none;
 }
 
+.list li a {
+  text-decoration: none;
+}
 /* button */
  
 .button {
@@ -70,7 +72,7 @@ letter-spacing: 0.06em;
 .link {
   color: var(--title-tex-color);
 
-  font-family: Roboto;
+ 
 font-style: normal;
 font-weight: 500;
 font-size: 14px;
@@ -100,8 +102,47 @@ text-transform: uppercase;
   color: var(--accent-color);
 }
 
-.site-nav .link.current {
+.link.current {
     color: var(--accent-color);
+
+    font-family: Roboto;
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 1.1;
+letter-spacing: 0.02em;
+}
+
+.link-tel {
+  color: var(--primery-tex-color);
+
+font-family: Roboto;
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 1.1;
+letter-spacing: 0.02em;
+}
+
+.link-tel:hover,
+.link-tel:focus:focus {
+  color: var(--accent-color);
+}
+
+.link-mail {
+  color: rgba(255, 255, 255, 0.6);
+
+  font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 1.7;
+letter-spacing: 0.03em;
+}
+
+.link-mail:hover,
+.link-mail:focus {
+  color: var(--accent-color);
 }
 
 /* main-nav */
@@ -166,18 +207,18 @@ letter-spacing: 0.03em;
 .slogan {
   color: var(--title-tex-color);
 
+font-family: Roboto;
 font-style: normal;
 font-weight: bold;
-font-size: 36px;
-line-height: 1.2;
+font-size: 14px;
+line-height: 1.1;
 letter-spacing: 0.03em;
+text-transform: uppercase;
 }
 
 .slogan-title {
   color: var(--title-tex-color);
 
-  font-family: Roboto;
-font-style: normal;
 font-weight: bold;
 font-size: 36px;
 line-height: 1.2;
@@ -185,8 +226,23 @@ text-align: center;
 letter-spacing: 0.03em;
 }
 
+.title {
+  
+font-weight: 900;
+font-size: 44px;
+line-height: 1.4;
 
-.section .headline {
+text-align: center;
+letter-spacing: 0.06em;
+text-transform: uppercase;
+}
+
+.comand {
+  background: var(--primery-main-color);
+  
+}
+
+.comand .headline {
   color: var(--title-tex-color);
 
   font-family: Roboto;
